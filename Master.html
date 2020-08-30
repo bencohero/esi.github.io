@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ESI-UNB</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header style="background-color: rgba(223, 230, 240, 1.9);">
+	<div id="en-tete">
+		<h1>INSCRIPTION ESI-UNB</h1>
+	</div>
+</header>
+<nav>
+	<div class="table">
+		<ul>
+			<li class="menu-esi">
+				<a href="esi.html">ACCUEIL</a>
+				
+			</li>
+			<li class="menu-gal">
+				<a href="gallerie.html">GALLERIE</a>
+			</li>
+			<li class="menu-insc">
+				   INSCRIPTION
+           <ul class="sous-menu">
+          <li><a href="licence.html">Licence</a></li>
+          <li><a href="Master.html">Master</a></li>
+        </ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<section >
+	<h1 style="color: rgba(230, 230, 230, 1.8");">FORMULAIRE D'INSCRIPTION</h1>
+	<form method="post" action="traitement.php">
+		<fieldset style="width: auto;background-color: rgba(235, 245, 255, 1.5);height: auto;">
+			<legend style="font-weight: bold;">Formulaire d'inscription en master</legend>
+		<table>
+			<tr>
+				<td>
+					<label for="form">Cycle de formation</label>
+				</td>
+				<td>
+			<select name="c_form" id="form">
+				<option value="Master">Master</option>
+			</select>
+			</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="nom">NOM</label>
+				</td>
+				<td>
+					<input type="text" name="Nom" id="nom" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="prenom">PRENOM</label>
+				</td>
+				<td>
+					<input type="text" name="Prenom" id="prenom" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="datenaiss">Date de nassance</label>
+				</td>
+				<td>
+					<input type="date" name="date" id="datenaiss" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="dipl">Diplome</label>
+				</td>
+				<td>
+					<select name="Diplome" id="dipl">
+						<option value="Licence">Licence</option>
+					</select>
+					<label for="sess">SESSION DE</label>
+					<input type="date" name="session" id="sess">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="mail">Email</label>
+				</td>
+				<td>
+					<input type="email" name="mail" id="mail" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" name="ajout" value="inscrire" id="push">
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+		var validation = document.getElementById('push');
+		validation.addEventListener('click',f_valide);
+
+		function f_valide(e){
+			if (prenom.validity.valueMissing) {
+				e.preventDefault();
+				alert('fggghhgggv');
+			}
+		}
+	</script>
+</section>
+<body>
+</body>
+<footer>
+	<p>Copyright 2020 ESI-UNB</p>
+</footer>
+</html>
