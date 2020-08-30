@@ -209,6 +209,10 @@ nav input[type=checkbox]:checked ~ ul{
 }
 
 @media screen and (max-width: 620px){
+	body{
+		width:100%;
+		margin: 0px;
+	}
 	header{
 		height: 50px;
 	}
