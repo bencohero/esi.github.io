@@ -210,9 +210,16 @@ nav input[type=checkbox]:checked ~ ul{
 
 @media screen and (max-width: 620px){
 	body{
-		width:100%;
-		margin: 0px;
+		width: 100%;
+		margin: 0px 0px 0px 0px;
 	}
+	section{
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+}
 	header{
 		height: 50px;
 	}
@@ -222,6 +229,7 @@ nav input[type=checkbox]:checked ~ ul{
 	}
 	nav{
 		width: 100%;
+		margin-top: 10px;
 	}
 	nav li{
 		font-size: 12px;
@@ -272,8 +280,8 @@ div.gallery img{
 
 .menu-mobile{
 	display: block;
-	color: #fff;
-	background-color: rgba(00, 150, 50, 1);
+	color: #000;
+	background-color: rgba(200, 200, 200, 1);
 	text-align: center;
 	font-weight: bold;
 	color: rgb(230, 230, 230);
@@ -281,7 +289,7 @@ div.gallery img{
 	width: auto;
 }
 nav{
-	background-color:  rgba(50, 10, 250, 1);
+	background-color:  rgba(200, 200, 200, 1);
 }
 nav ul{
 	display: none;
